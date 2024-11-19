@@ -1,0 +1,7 @@
+.venv
+.idea
+*.pyc
+*.pyo
+*.pyclass
+*.gz
+flow.json/*
