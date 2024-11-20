@@ -4,9 +4,11 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import gzip
 import json
+import csv
 
 
 def get_leaf_nodes(obj, leaves=None):
+
     if leaves is None:
         leaves = []
 
@@ -29,7 +31,7 @@ def get_type_values(obj, result=None):
     if isinstance(obj, dict):
         # If it's a dictionary, check each key
         for key, value in obj.items():
-            if key == "type":  # If key is 'type', add its value
+            if key == "type" and isinstance(value, str):  # If key is 'type', add its value
                 result.append(value)
             else:
                 # Recursively check for nested dictionaries
@@ -48,40 +50,36 @@ def open_gz(filename):
         return json.load(f)
 
 
+def read_csv_names(filename):
+    """
+    Read the .csv file and return a list of names.
+
+    :param filename: The filename of the .csv file
+    :return: A list of the names in the .csv file
+    """
+    with open(filename, 'r') as f:
+        reader = csv.reader(f)
+        next(reader)  # Skip header line
+        names = [row[0] for row in reader]
+    return names
+    with open(filename, 'r') as f:
+        reader = csv.reader(f)
+        next(reader)  # Skip header line
+        names = [row[0] for row in reader]
+    return names
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    # json_data = {
-    #     "name": "Alice",
-    #     "age": 30,
-    #     "address": {
-    #         "city": "Wonderland",
-    #         "zipcode": "12345"
-    #     },
-    #     "hobbies": ["reading", "traveling"],
-    #     "details": {
-    #         "employed": True,
-    #         "skills": ["Python", "Data Analysis"]
-    #     }
-    # }
-    # # open_gz("flow.json.gz")
-    # leaves = get_leaf_nodes(json_data)
-    # print(leaves)
-
-    json_data = {
-        "name": "Alice",
-        "details": {
-            "type": "admin",
-            "address": {
-                "type": "residential",
-                "zipcode": "12345"
-            }
-        },
-        "projects": [
-            {"type": "development", "status": "active"},
-            {"type": "research", "status": "pending"}
-        ]
-    }
+    json_data = open_gz("flow.json.gz")
 
     # Extract all values for key 'type'
     type_values = get_type_values(json_data)
-    print(type_values)
+    components = list(filter(lambda x: (x != "FUNNEL" and x != "PROCESSOR"),
+                             map(lambda x: x.split(".")[-1], type_values)))
+
+    deprecated_list = read_csv_names("deprecated.csv")
+    # print(deprecated_list)
+    # print(components)
+    intersection = list(set(components).intersection(deprecated_list))
+    print(intersection)

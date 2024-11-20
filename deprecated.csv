@@ -1,0 +1,149 @@
+Name,Type,Version
+ActionHandlerLookup,Controller Service,1.24.0
+AlertHandler,Controller Service,1.24.0
+AmbariReportingTask,Reporting Task,1.21.0
+Base64EncodeContent,Processor,1.20.0
+CassandraSessionProvider,Controller Service,1.26.0
+CompareFuzzyHash,Processor,1.24.0
+ConsumeEWS,Processor,1.20.0
+ConsumeKafka_1_0,Processor,1.21.0
+ConsumeKafka_2_0,Processor,1.21.0
+ConsumeKafka_2_6,Processor,1.29.0
+ConsumeKafkaRecord_1_0,Processor,1.21.0
+ConsumeKafkaRecord_2_0,Processor,1.21.0
+ConsumeKafkaRecord_2_6,Processor,1.29.0
+ConvertAvroToJSON,Processor,1.26.0
+ConvertExcelToCSVProcessor,Processor,1.24.0
+ConvertJSONToSql,Processor,1.28.0
+CouchbaseClusterService,Controller Service,1.27.0
+CouchbaseKeyValueLookupService,Controller Service,1.27.0
+CouchbaseMapCacheClient,Controller Service,1.27.0
+CouchbaseRecordLookupService,Controller Service,1.27.0
+CryptographicHashAttribute,Processor,1.21.0
+DecryptContent,Processor,1.28.0
+DecryptContentCompatibility,Processor,1.28.0
+DeleteHBaseCells,Processor,1.29.0
+DeleteHBaseRow,Processor,1.29.0
+DeleteRethinkDB,Processor,1.23.0
+DatadogReportingTask,Reporting Task,1.27.0
+DistributedMapCacheClientService,Controller Service,2.0.0-M4
+DistributedMapCacheServer,Controller Service,2.0.0-M4,MapCacheServer
+EncryptContent,Processor,1.24.0
+ExecuteFlumeSink,Processor,1.19.0
+ExecuteFlumeSource,Processor,1.19.0
+ExecuteInfluxDBQuery,Processor,1.25.0
+ExecuteStateless,Processor,2.0.0-M2
+ExpressionHandler,Controller Service,1.24.0
+ExtractCCDAAttributes,Processor,1.20.0
+ExtractTNEFAttachments,Processor,1.28.0
+FetchElasticsearchHttp,Processor,1.16.0
+FetchHBaseRow,Processor,1.29.0
+FuzzyHashContent,Processor,1.24.0
+GetAzureQueueStorage,Processor,1.22.0
+GetCouchbaseKey,Processor,1.27.0
+GetHBaseRow,Processor,1.29.0
+GetHTMLElement,Processor,1.24.0
+GetHTTP,Processor,1.9.0,InvokeHTTP
+GetIgniteCache,Processor,1.22.0
+GetJMSQueue,Processor,1.3.0
+GetJMSTopic,Processor,1.3.0
+GetRethinkDB,Processor,1.23.0
+GetSolr,Processor,1.26.0
+GetTCP,Processor,1.24.0
+GetTwitter,Processor,1.17.0
+GraphiteMetricReporterService,Controller Service,1.24.0
+DeleteAzureBlobStorage,Processor,1.19.0
+ExecuteSparkInteractive,Processor,1.26.0
+FetchAzureBlobStorage,Processor,1.19.0
+HadoopCatalogService,Controller Service,1.29.0
+HiveCatalogService,Controller Service,1.29.0
+HiveConnectionPool,Controller Service,1.19.0
+Hive_1_1ConnectionPool,Controller Service,1.19.0
+Hive3ConnectionPool,Controller Service,1.26.0
+HashAttribute,Processor,1.21.0
+HashContent,Processor,1.8.0
+HortonworksSchemaRegistry,Controller Service,1.20.0
+HBase_2_ClientMapCacheService,Controller Service,1.29.0
+HBase_2_ClientService,Controller Service,1.29.0
+HBase_2_LIstLookupService,Controller Service,1.29.0
+HBase_2_RecordLookupService,Controller Service,1.29.0
+InvokeAWSGatewayApi,Processor,1.27.0
+InvokeGRPC,Processor,1.24.0
+JdbcCatalogService,Controller Service,1.29.0
+KafkaRecordSink_1_0,Controller Service,1.21.0
+KafkaRecordSink_2_0,Controller Service,1.21.0
+KafkaRecordSink_2_6,Controller Service,1.29
+KuduLookupService,Controller Service,1.28.0
+ListenBeats,Processor,1.28.0
+ListenGRPC,Processor,1.24.0
+ListenRELP,Processor,1.28.0
+ListenSMTP,Processor,1.28.0
+ListenTCPRecord,Processor,1.28.0
+ListAzureBlobStorage,Processor,1.19.0
+ListHBaseRegions,Processor,1.29.0
+LivySessionController,Controller Service,1.26.0
+LogHandler,Processor,1.24.0
+MetricsReportingTask,Reporting Task,1.24.0
+ModifyHTMLElement,Processor,1.24.0
+Neo4JCypher3ClientService,Controller Service,1.16.0
+OAuth2TokenProviderImpl,Controller Service,1.16.0
+OpenCypherClientService,Controller Service,1.21.0
+ParseCEF,Processor,1.28.0
+PostHTTP,Processor,1.9.0
+PostSlack,Processor,1.25.0
+PrometheusReportingTask,Reporting Task,1.28.0
+PrometheusRecordSink,Controller Service,1.28.0
+PutCassandraQL,Processor,1.26.0
+PutCassandraRecord,Processor,1.26.0
+PutCouchbaseKey,Processor,1.27.0
+PublishKafka_1_0,Processor,1.21.0
+PublishKafka_2_0,Processor,1.21.0
+PublishKafka_2_6,Processor,1.29.0
+PublishKafkaRecord_1_0,Processor,1.21.0
+PublishKafkaRecord_2_0,Processor,1.21.0
+PublishKafkaRecord_2_6,Processor,1.29.0
+PutAzureBlobStorage,Processor,1.19.0
+PutAzureQueueStorage,Processor,1.22.0
+PutBigQueryBatch,Processor,1.18.0
+PutBigQueryStreaming,Processor,1.18.0
+PutElasticsearchHttp,Processor,1.16.0
+PutElasticsearchHttpRecord,Processor,1.16.0
+PutHBaseCell,Processor,1.29.0
+PutHBaseJSON,Processor,1.29.0
+PutHBaseRecord,Processor,1.29.0,
+PutHiveQL,Processor,1.19.0
+PutHive_1_1QL,Processor,1.19.0
+PutHiveStreaming,Processor,1.19.0
+PutHive3QL,Processor,1.26.0
+PutHive3Streaming,Processor,1.26.0
+PutHTMLElement,Processor,1.24.0
+PutIceberg,Processor,1.29.0
+PutIgniteCache,Processor,1.22.0
+PutInfluxDB,Processor,1.25.0
+PutJMS,Processor,1.3.0
+PutKudu,Processor,1.28.0
+PutORC,Processor,1.26.0
+PutRethinkDB,Processor,1.23.0
+PutRiemann,Processor,1.24.0
+PutSlack,Processor,1.25.0
+PutSolrContentStream,Processor,1.26.0
+PutSolrRecord,Processor,1.26.0
+QueryCassandra,Processor,1.26.0
+QueryDNS,Processor,1.28.0
+QueryElasticsearchHttp,Processor,1.15.0
+QuerySolr,Processor,1.26.0
+QueryWhois,Processor,1.28.0
+ReportLineageToAtlas,Reporting Task,1.26.0
+RecordSinkHandler,Controller Service,1.24.0
+ScanHBase,Processor,1.29.0
+ScrollElasticsearchHttp,Processor,1.15.0
+SelectHiveQL,Processor,1.19.0
+SelectHive_1_1QL,Processor,1.19.0
+SelectHive3QL,Processor,1.26.0
+SpringContextProcessor,Processor,1.24.0
+StandardGangliaReporter,Reporting Task,1.28.0
+TriggerHiveMetaStoreEvent,Processor,1.26.0
+UpdateHiveTable,Processor,1.19.0
+UpdateHive_1_1Table,Processor,1.19.0
+UpdateHive3Table,Controller Service,1.26.0
+YandexTranslate,Processor,1.28.0
