@@ -51,17 +51,6 @@ def open_gz(filename):
 
 
 def read_csv_names(filename):
-    """
-    Read the .csv file and return a list of names.
-
-    :param filename: The filename of the .csv file
-    :return: A list of the names in the .csv file
-    """
-    with open(filename, 'r') as f:
-        reader = csv.reader(f)
-        next(reader)  # Skip header line
-        names = [row[0] for row in reader]
-    return names
     with open(filename, 'r') as f:
         reader = csv.reader(f)
         next(reader)  # Skip header line
