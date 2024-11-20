@@ -162,3 +162,15 @@ ScriptedRecordSetWriter,Controller Service,2.0.0
 ScriptedRecordSink,Controller Service,2.0.0
 SimpleScriptedLookupService,Controller Service,2.0.0
 ScriptedReportingTask,Reporting Task,2.0.0
+ConsumeKafka_1_0,Processor,2.0.0
+ConsumeKafka_2_0,Processor,2.0.0
+ConsumeKafka_2_6,Processor,2.0.0
+PublishKafka_1_0,Processor,2.0.0
+PublishKafka_2_0,Processor,2.0.0
+PublishKafka_2_6,Processor,2.0.0
+ConsumeKafkaRecord_1_0,Processor,2.0.0
+ConsumeKafkaRecord_2_0,Processor,2.0.0
+ConsumeKafkaRecord_2_6,Processor,2.0.0
+PublishKafkaRecord_1_0,Processor,2.0.0
+PublishKafkaRecord_2_0,Processor,2.0.0
+PublishKafkaRecord_2_6,Processor,2.0.0
