@@ -147,3 +147,18 @@ UpdateHiveTable,Processor,1.19.0
 UpdateHive_1_1Table,Processor,1.19.0
 UpdateHive3Table,Controller Service,1.26.0
 YandexTranslate,Processor,1.28.0
+JoltTransformJSON,Processor,1.29.0
+JoltTransformRecord,Processor,1.29.0
+FileParameterProvider,Parameter Provider,1.29.0
+ExecuteScript,Processor,2.0.0
+InvokeScriptedProcessor,Processor,2.0.0
+ScriptedFilterRecord,Processor,2.0.0
+ScriptedPartitionRecord,Processor,2.0.0
+ScriptedTransformRecord,Processor,2.0.0
+ScriptedValidateRecord,Processor,2.0.0
+ScriptedLookupService,Controller Service,2.0.0
+ScriptedReader,Controller Service,2.0.0
+ScriptedRecordSetWriter,Controller Service,2.0.0
+ScriptedRecordSink,Controller Service,2.0.0
+SimpleScriptedLookupService,Controller Service,2.0.0
+ScriptedReportingTask,Reporting Task,2.0.0
