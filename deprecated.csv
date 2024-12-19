@@ -14,7 +14,7 @@ ConsumeKafkaRecord_2_0,Processor,1.21.0
 ConsumeKafkaRecord_2_6,Processor,1.29.0
 ConvertAvroToJSON,Processor,1.26.0
 ConvertExcelToCSVProcessor,Processor,1.24.0
-ConvertJSONToSql,Processor,1.28.0
+ConvertJSONToSQL,Processor,1.28.0
 CouchbaseClusterService,Controller Service,1.27.0
 CouchbaseKeyValueLookupService,Controller Service,1.27.0
 CouchbaseMapCacheClient,Controller Service,1.27.0
